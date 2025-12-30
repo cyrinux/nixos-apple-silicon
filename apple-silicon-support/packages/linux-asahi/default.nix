@@ -51,6 +51,9 @@ let
 
             APPLE_PMGR_MISC = yes;
             APPLE_PMGR_PWRSTATE = yes;
+
+            APPLE_RTKIT = yes; # FIXME
+            APPLE_MAILBOX = yes; # FIXME
           };
           features.rust = true;
         }
