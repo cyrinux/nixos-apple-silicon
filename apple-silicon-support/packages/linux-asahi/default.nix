@@ -18,15 +18,15 @@ let
       inherit stdenv lib;
 
       pname = "linux-asahi";
-      version = "6.18.2";
+      version = "6.18.3";
       modDirVersion = version;
       extraMeta.branch = "6.18";
 
       src = fetchFromGitHub {
         owner = "AsahiLinux";
         repo = "linux";
-        rev = "21a493172ce13c95df12b42faddfca515388d80c";
-        hash = "sha256-UCQs+VYIWZMYiizkLWdPjSipBuOB1ahZx2oy5VuEjPI=";
+        rev = "eef91cd33c4231143f3af9ddb184cdb0e95e6413";
+        hash = "sha256-oD90BEoXrmTUt+QQ+NahKkelY5wkdc3+ipwhKa0XnPg=";
       };
 
       kernelPatches = [
