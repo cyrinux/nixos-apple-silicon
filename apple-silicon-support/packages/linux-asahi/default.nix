@@ -1,18 +1,17 @@
-{
-  lib,
-  callPackage,
-  linuxPackagesFor,
-  _kernelPatches ? [ ],
+{ lib
+, callPackage
+, linuxPackagesFor
+, _kernelPatches ? [ ]
+,
 }:
 
 let
   linux-asahi-pkg =
-    {
-      stdenv,
-      lib,
-      fetchFromGitHub,
-      buildLinux,
-      ...
+    { stdenv
+    , lib
+    , fetchFromGitHub
+    , buildLinux
+    , ...
     }:
     buildLinux rec {
       inherit stdenv lib;
@@ -25,8 +24,8 @@ let
       src = fetchFromGitHub {
         owner = "AsahiLinux";
         repo = "linux";
-        rev = "eef91cd33c4231143f3af9ddb184cdb0e95e6413";
-        hash = "sha256-oD90BEoXrmTUt+QQ+NahKkelY5wkdc3+ipwhKa0XnPg=";
+        rev = "19a39556851eb80470b760452f946b8cac046363";
+        hash = "sha256-piahw/0b0rKVt7uWdlCXuACLGrofknZLgF4rKtW2ZSw=";
       };
 
       kernelPatches = [
