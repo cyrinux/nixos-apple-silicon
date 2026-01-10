@@ -25,7 +25,7 @@ let
         owner = "AsahiLinux";
         repo = "linux";
         rev = "19a39556851eb80470b760452f946b8cac046363";
-        hash = "sha256-piahw/0b0rKVt7uWdlCXuACLGrofknZLgF4rKtW2ZSw=";
+        hash = "sha256-86TT1VcBAYB66My5QqMI5xsa3IMzNKrL/zkhEGtRvnI=";
       };
 
       kernelPatches = [
